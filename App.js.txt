@@ -1,0 +1,14 @@
+let map;
+
+function initMap() {
+    // Set the default location (replace with user's location if available)
+    const defaultLocation = { lat: 37.7749, lng: -122.4194 };
+
+    // Create a map centered at the default location
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: defaultLocation,
+        zoom: 12
+    });
+
+    // You can add markers or other features based on your requirements
+}
